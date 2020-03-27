@@ -51,10 +51,10 @@ def predict():
         img = base64_to_pil(request.json)
 
         # Save the image to ./uploads
-        img.save("db/image.png")
+        img.save("image.png")
 
         # Make prediction
-        preds = main("db/image.png")
+        preds = main("image.png")
 
         # Process your result for human
         # pred_proba = "{:.3f}".format(np.amax(preds))    # Max probability
