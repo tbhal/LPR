@@ -39,7 +39,7 @@ def main(imagepointer):
 
     listOfPossiblePlates = DetectChars.detectCharsInPlates(listOfPossiblePlates)        # detect chars in plates
 
-    cv2.imshow("imgOriginalScene", imgOriginalScene)            # show scene image
+    # cv2.imshow("imgOriginalScene", imgOriginalScene)            # show scene image
 
     if len(listOfPossiblePlates) == 0:                          # if no plates were found
         print("\nno license plates were detected\n")  # inform user no plates were found
@@ -66,9 +66,9 @@ def main(imagepointer):
 
         writeLicensePlateCharsOnImage(imgOriginalScene, licPlate)           # write license plate text on the image
 
-        cv2.imshow("imgOriginalScene", imgOriginalScene)                # re-show scene image
+        # cv2.imshow("imgOriginalScene", imgOriginalScene)                # re-show scene image
 
-        cv2.imwrite("imgOriginalScene.png", imgOriginalScene)           # write image out to file
+        # cv2.imwrite("imgOriginalScene.png", imgOriginalScene)           # write image out to file
 
     # end if else
 
