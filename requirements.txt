@@ -3,3 +3,4 @@ numpy
 gevent
 Pillow
 opencv-python
+gunicorn
