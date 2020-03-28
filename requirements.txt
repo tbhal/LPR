@@ -2,5 +2,4 @@ flask
 numpy
 gevent
 PIL
-io
 cv2
